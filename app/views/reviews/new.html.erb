@@ -1,0 +1,10 @@
+<div class="container m-3">
+<h1>Write a review</h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :rating %>
+  <%= f.input :content %>
+  <%= f.submit class: "btn btn-primary add mb-3" %>
+<% end %>
+
+<%= link_to '<i class="fa-solid fa-rotate-left"></i> Back to Restaurants'.html_safe, restaurant_path(@restaurant), class:"sm-lnk" %>
+</div>

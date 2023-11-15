@@ -13,3 +13,65 @@
  *= require_tree .
  *= require_self
  */
+ ul {
+  list-style-type: none;
+ }
+
+h1 {
+  font-weight: bold !important;
+  color:crimson !important;
+}
+
+ul li:before {
+  font-family: 'FontAwesome';
+  content: '\f818';
+  margin:0 5px 0 -15px;
+  color:crimson;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.links {
+  color: grey;
+  font-size: 18px;
+}
+
+.add {
+  background-color: grey !important;
+  border: none !important;
+}
+
+.add:hover {
+  background-color: rgb(44, 43, 43) !important;
+}
+
+p {
+  color: grey;
+  font-size: 18px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.sm-lnk {
+  color:crimson;
+  font-size: 16px;
+}
+
+.details:hover {
+  box-shadow: 0 .125rem .25rem crimson;
+}

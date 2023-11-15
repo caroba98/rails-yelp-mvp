@@ -1,0 +1,12 @@
+<div class="container m-3">
+<h1>Add new restaurant</h1>
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category, collection: Restaurant::CATEGORIES %>
+  <%= f.submit class: "btn btn-primary add mb-3" %>
+<% end %>
+
+<%= link_to '<i class="fa-solid fa-rotate-left"></i> Back to Restaurants'.html_safe, restaurants_path, class:"sm-lnk" %>
+</div>
